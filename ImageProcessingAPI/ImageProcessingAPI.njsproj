@@ -35,15 +35,22 @@
     <Content Include=".eslintignore" />
     <Content Include=".eslintrc" />
     <Content Include=".prettierrc" />
+    <Content Include="spec\support\jasmine.json" />
     <Content Include="tsconfig.json" />
     <Content Include="package.json" />
     <Content Include="README.md" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="spec\" />
+    <Folder Include="spec\support\" />
     <Folder Include="src\" />
+    <Folder Include="src\tests\" />
+    <Folder Include="src\tests\helpers\" />
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="src\index.ts" />
+    <TypeScriptCompile Include="src\tests\helpers\reporter.ts" />
+    <TypeScriptCompile Include="src\tests\index.spec.ts" />
   </ItemGroup>
   <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsToolsV2.targets" />
   <ProjectExtensions>
