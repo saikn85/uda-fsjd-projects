@@ -1,14 +1,22 @@
 {
-  "name": "image-processing-api",
-  "version": "0.0.0",
-  "description": "ImageProcessingAPI",
-  "main": "server.js",
   "author": {
-    "name": ""
+    "name": "Mad Max"
   },
+  "description": "ImageProcessingAPI",
   "devDependencies": {
-    "eslint": "^8.21.0"
+    "@types/node": "^20.9.0",
+    "eslint": "^8.53.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-prettier": "^5.0.1",
+    "prettier": "^3.1.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2"
   },
-  "eslintConfig": {
-  }
+  "main": "index.ts",
+  "name": "image-processing-api",
+  "scripts": {
+    "lint": "eslint . --ext .ts",
+    "prettify": "prettier --config .prettierrc.json 'src' --write"
+  },
+  "version": "1.0.0"
 }
