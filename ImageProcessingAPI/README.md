@@ -1,3 +1,1 @@
 # Image Processing API
-
-
