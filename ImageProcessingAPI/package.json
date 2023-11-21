@@ -26,7 +26,7 @@
   "scripts": {
     "build": "npx tsc",
     "lint": "eslint . --ext .ts",
-    "prettify": "prettier --config .prettierrc 'src' --write",
+    "prettify": "prettier --config .prettierrc src/**/*.ts --write",
     "start": "nodemon src/index.ts",
     "test": "npm run build && npm run jasmine"
   },
